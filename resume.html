@@ -9,6 +9,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
+
+    <!-- Standardized CSS for Certification and Education Logos -->
+    <style>
+        .cert-logo, .edu-logo {
+            max-width: 120px; /* Consistent size for all logos */
+            height: auto;     /* Maintain aspect ratio */
+            display: block;   /* Center the logo */
+            margin: 10px auto; /* Add space around the logos */
+        }
+    </style>
 </head>
 <body class="d-flex flex-column h-100 bg-light">
     <main class="flex-shrink-0">
@@ -33,20 +43,21 @@
                 <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Resume</span></h1>
             </div>
 
-            <!-- Education Section First -->
             <section>
                 <h2 class="text-secondary fw-bolder mb-4">Education</h2>
-                <div class="card shadow border-0 rounded-4 mb-5">
-                    <div class="card-body p-5">
-                        <h4>Western Governors University</h4>
-                        <p class="text-muted">M.S. Cybersecurity and Information Assurance</p>
-                    </div>
+
+                <!-- WGU (Clickable Logo) -->
+                <div class="col text-center mb-4">
+                    <a href="https://www.wgu.edu" target="_blank">
+                        <img src="assets/wgu.png" alt="WGU Logo" class="edu-logo">
+                    </a>
+                    <p class="text-muted">M.S. Cybersecurity and Information Assurance</p>
                 </div>
-                <div class="card shadow border-0 rounded-4 mb-5">
-                    <div class="card-body p-5">
-                        <h4>Oakwood University</h4>
-                        <p class="text-muted">B.S. Business Finance</p>
-                    </div>
+                
+                <!-- Oakwood University (Non-Clickable Logo) -->
+                <div class="col text-center">
+                    <img src="assets/oakwood.png" alt="Oakwood University Logo" class="edu-logo">
+                    <p class="text-muted">B.S. Business Finance</p>
                 </div>
             </section>
 
