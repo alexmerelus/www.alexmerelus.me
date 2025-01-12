@@ -37,29 +37,38 @@
             </div>
         </nav>
 
-        <!-- Page Content -->
-        <div class="container px-5 my-5">
-            <div class="text-center mb-5">
-                <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Resume</span></h1>
-            </div>
 
-            <section>
-                <h2 class="text-secondary fw-bolder mb-4">Education</h2>
+<!-- Education Section (Logos on the Left, Summary on the Right) -->
+<section>
+    <h2 class="text-secondary fw-bolder mb-4">Education</h2>
 
-                <!-- WGU (Clickable Logo) -->
-                <div class="col text-center mb-4">
-                    <a href="https://www.wgu.edu" target="_blank">
-                        <img src="assets/wgu.png" alt="WGU Logo" class="edu-logo">
-                    </a>
-                    <p class="text-muted">M.S. Cybersecurity and Information Assurance</p>
-                </div>
-                
-                <!-- Oakwood University (Non-Clickable Logo) -->
-                <div class="col text-center">
-                    <img src="assets/oakwood.png" alt="Oakwood University Logo" class="edu-logo">
-                    <p class="text-muted">B.S. Business Finance</p>
-                </div>
-            </section>
+    <!-- WGU (Clickable Logo + Summary on Right) -->
+    <div class="row align-items-center mb-5">
+        <div class="col-md-3 text-center">
+            <a href="https://www.wgu.edu" target="_blank">
+                <img src="assets/wgu.png" alt="WGU Logo" class="edu-logo">
+            </a>
+        </div>
+        <div class="col-md-9">
+            <h4>Western Governors University</h4>
+            <p class="text-muted">M.S. Cybersecurity and Information Assurance | 2024</p>
+            <p>This program focused on advanced cybersecurity concepts, including risk management, compliance, and security automation strategies. Core areas included threat intelligence, IAM, and cloud security methodologies.</p>
+        </div>
+    </div>
+
+    <!-- Oakwood (Non-Clickable Logo + Summary on Right) -->
+    <div class="row align-items-center mb-5">
+        <div class="col-md-3 text-center">
+            <img src="assets/oakwood.png" alt="Oakwood University Logo" class="edu-logo">
+        </div>
+        <div class="col-md-9">
+            <h4>Oakwood University</h4>
+            <p class="text-muted">B.S. Business Finance | 2014</p>
+            <p>The Business Finance program provided a solid foundation in financial management, economic principles, and investment strategies, preparing for strategic decision-making in business environments.</p>
+        </div>
+    </div>
+</section>
+
 
             <!-- Work Experience Section -->
             <section>
@@ -152,12 +161,13 @@
                     </div>
 
                     <!-- SailPoint Badge -->
-                    <div class="col mb-4">
-                        <a href="https://api.badgr.io/public/assertions/iNcea9SHSKKPhbdTTu3IsQ" target="_blank">
-                            <img src="assets/sailpoint.png" alt="SailPoint Badge" class="cert-logo">
-                        </a>
-                    </div>
+                <div class="mt-4">
+                    <h4>SailPoint IdentityNow Security Leader</h4>
+                    <a href="https://api.badgr.io/public/assertions/iNcea9SHSKKPhbdTTu3IsQ" target="_blank">
+                        <img src="https://api.badgr.io/public/assertions/iNcea9SHSKKPhbdTTu3IsQ/image" alt="SailPoint IdentityNow Badge" style="max-width: 150px;"/>
+                    </a>
                 </div>
+                    
             </section>
         </div>
     </main>
