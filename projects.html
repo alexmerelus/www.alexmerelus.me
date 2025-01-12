@@ -30,6 +30,27 @@
             display: block;
             padding: 20px; /* Space around the image */
         }
+
+    /* Consistent Link Styling with Arrow */
+    .project-link {
+        color: #6a11cb; /* Matching Gradient Color */
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    /* Arrow Styling with Animation */
+    .project-link:hover .arrow-icon {
+        margin-left: 8px; /* Arrow moves slightly when hovered */
+        transition: margin-left 0.3s ease;
+    }
+
+    /* Arrow Color Matches Link Color */
+    .arrow-icon {
+        color: #6a11cb; /* Matches the gradient color */
+        font-size: 24px;
+    }
+
+
     </style>
 </head>
 
@@ -60,21 +81,24 @@
                 <div class="row gx-5 justify-content-center">
                     <div class="col-lg-11 col-xl-9 col-xxl-8">
 
-                        <!-- Project Card 1: Azure RBAC -->
-                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                            <div class="card-body p-0">
-                                <div class="d-flex align-items-center">
-                                    <div class="p-5">
-                                        <a href="https://github.com/alexmerelus/Azure-AD-RBAC-Automation" class="text-gradient d-inline" target="_blank" rel="noopener noreferrer" style="font-size: 24px; font-weight: bold;">
-                                            Azure AD RBAC Automation Project
-                                        </a>
-                                        <p>Automated secure role assignments in Microsoft Entra ID (Azure AD) with role-based access controls (RBAC). Integrated Splunk for security event analysis and included compliance reporting following NIST standards. The project ensures streamlined security monitoring and enhanced access governance.</p>
-                                    </div>
-                                    <!-- Reduced and Centered Image -->
-                                    <img class="project-image" src="assets/AzureRBAC.jpg" alt="Azure RBAC Project Image" />
-                                </div>
-                            </div>
-                        </div>
+<!-- Project Card 1: Azure RBAC with Arrow Icon -->
+<div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+    <div class="card-body p-0">
+        <div class="d-flex align-items-center">
+            <div class="p-5">
+                <!-- Link with Matching Colored Arrow Icon -->
+                <a href="https://github.com/alexmerelus/Azure-AD-RBAC-Automation" class="text-gradient d-inline project-link" target="_blank" rel="noopener noreferrer" style="font-size: 24px; font-weight: bold;">
+                    Azure AD RBAC Automation Project 
+                    <span class="arrow-icon">→</span>
+                </a>
+                <p>Automated secure role assignments in Microsoft Entra ID (Azure AD) with role-based access controls (RBAC). Integrated Splunk for security event analysis and included compliance reporting following NIST standards. The project ensures streamlined security monitoring and enhanced access governance.</p>
+            </div>
+            <!-- Reduced and Centered Image -->
+            <img class="project-image" src="assets/AzureRBAC.jpg" alt="Azure RBAC Project Image" />
+        </div>
+    </div>
+</div>
+
 
                         <!-- Project Card 2: Azure Honeynet -->
                         <div class="card overflow-hidden shadow rounded-4 border-0">
