@@ -9,6 +9,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
+    <style>
+        /* Consistent styling for all badges and logos */
+        .badge-logo {
+            max-width: 150px;
+            height: auto;
+            margin: 20px auto;
+            display: block;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .badge-logo:hover {
+            transform: scale(1.1);
+        }
+    </style>
 </head>
 <body class="d-flex flex-column h-100 bg-light">
     <main class="flex-shrink-0">
@@ -33,17 +49,22 @@
                 <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Resume</span></h1>
             </div>
 
-            <!-- Education Section -->
+            <!-- Education Section with Logos -->
             <section>
                 <h2 class="text-secondary fw-bolder mb-4">Education</h2>
-                <div class="card shadow border-0 rounded-4 mb-5">
-                    <div class="card-body p-5">
+                <div class="row row-cols-1 row-cols-md-2 mb-4">
+                    <div class="col mb-4">
+                        <a href="https://www.wgu.edu/" target="_blank">
+                            <img src="assets/wgu-logo.png" alt="WGU Logo" class="badge-logo">
+                        </a>
                         <h4>Western Governors University</h4>
                         <p class="text-muted">M.S. Cybersecurity and Information Assurance | 2024</p>
                     </div>
-                </div>
-                <div class="card shadow border-0 rounded-4 mb-5">
-                    <div class="card-body p-5">
+
+                    <div class="col mb-4">
+                        <a href="https://www.oakwood.edu/" target="_blank">
+                            <img src="assets/oakwood-logo.png" alt="Oakwood University Logo" class="badge-logo">
+                        </a>
                         <h4>Oakwood University</h4>
                         <p class="text-muted">B.S. Business Finance | 2014</p>
                     </div>
@@ -53,69 +74,33 @@
             <!-- Work Experience Section -->
             <section>
                 <h2 class="text-primary fw-bolder mb-4">Work Experience</h2>
-                
-                <!-- Inspire Brands -->
                 <div class="card shadow border-0 rounded-4 mb-5">
                     <div class="card-body p-5">
                         <h4>Identity Access Management Engineer | Inspire Brands | Nov 2023 - Present</h4>
                         <p>At Inspire Brands, I implemented IAM policies and automated access reviews, ensuring SOX compliance using SailPoint IdentityNow, Active Directory, and Workday. I developed a reporting system that improved audit readiness by centralizing security control evaluations, while also automating API-based testing with Postman to streamline access request management.</p>
                     </div>
                 </div>
-
-                <!-- DxFeed/Devexperts -->
-                <div class="card shadow border-0 rounded-4 mb-5">
-                    <div class="card-body p-5">
-                        <h4>Information Security Specialist | DxFeed/Devexperts | March 2022 - Nov 2023</h4>
-                        <p>At DxFeed, I played a pivotal role in securing cloud environments within AWS, reducing vulnerabilities by 60% using Nessus. My responsibilities included contributing to SOC-2 compliance efforts by focusing on identity lifecycle management and leading collaboration across security teams using Jira to ensure continuous security improvements.</p>
-                    </div>
-                </div>
-
-                <!-- Eretmis -->
-                <div class="card shadow border-0 rounded-4 mb-5">
-                    <div class="card-body p-5">
-                        <h4>PCI DSS Consultant | Eretmis | Nov 2022 - May 2023</h4>
-                        <p>As a PCI DSS Consultant at Eretmis, I conducted compliance assessments and network audits to identify security gaps. I provided detailed security recommendations that enhanced the organization’s overall security posture and ensured ongoing compliance with PCI DSS standards.</p>
-                    </div>
-                </div>
-
-                <!-- Apple -->
-                <div class="card shadow border-0 rounded-4 mb-5">
-                    <div class="card-body p-5">
-                        <h4>Technical Security Expert | Apple, Inc | May 2020 - March 2022</h4>
-                        <p>During my time at Apple, I led security awareness initiatives and implemented endpoint security strategies that resulted in a 30% reduction in security incidents. I also developed identity protection protocols to safeguard sensitive customer data and collaborated with cross-functional teams to maintain security compliance.</p>
-                    </div>
-                </div>
             </section>
 
-            <!-- Certifications Section with Badge Integration -->
+            <!-- Certifications Section with Logos -->
             <section>
                 <h2 class="text-secondary fw-bolder mb-4">Certifications</h2>
                 <div class="row row-cols-1 row-cols-md-3 mb-4">
-                    <!-- CompTIA Security+ -->
-                    <div class="col mb-4 mb-md-0">
+                    <div class="col mb-4">
                         <a href="https://www.credly.com/badges/fake-security-plus" target="_blank">
-                            <img src="assets/security-plus-badge.png" alt="CompTIA Security+ Badge" style="max-width: 150px;">
+                            <img src="assets/security-plus-badge.png" alt="CompTIA Security+ Badge" class="badge-logo">
                         </a>
                     </div>
 
-                    <!-- ISC2 CC -->
-                    <div class="col mb-4 mb-md-0">
+                    <div class="col mb-4">
                         <a href="https://www.credly.com/badges/fake-isc2-cc" target="_blank">
-                            <img src="assets/isc2-cc-badge.png" alt="ISC2 CC Badge" style="max-width: 150px;">
+                            <img src="assets/isc2-cc-badge.png" alt="ISC2 CC Badge" class="badge-logo">
                         </a>
                     </div>
 
-                    <!-- SailPoint IdentityNow -->
-                    <div class="col mb-4 mb-md-0">
+                    <div class="col mb-4">
                         <a href="https://api.badgr.io/public/assertions/iNcea9SHSKKPhbdTTu3IsQ" target="_blank">
-                            <img src="https://api.badgr.io/public/assertions/iNcea9SHSKKPhbdTTu3IsQ/image" alt="SailPoint Badge" style="max-width: 150px;">
-                        </a>
-                    </div>
-
-                    <!-- Google Cybersecurity -->
-                    <div class="col mb-4 mb-md-0">
-                        <a href="https://www.credly.com/badges/fake-google-cyber" target="_blank">
-                            <img src="assets/google-cyber-badge.png" alt="Google Cybersecurity Badge" style="max-width: 150px;">
+                            <img src="https://api.badgr.io/public/assertions/iNcea9SHSKKPhbdTTu3IsQ/image" alt="SailPoint Badge" class="badge-logo">
                         </a>
                     </div>
                 </div>
